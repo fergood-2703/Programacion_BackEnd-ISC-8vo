@@ -1,0 +1,150 @@
+[
+    {
+        "id": "0001",
+        "tipo": "taco",
+        "nombre": "Taco de Poc Chuc",
+        "precio": 25.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Puerco",
+                "preparacion": "Marinado en naranja agria y asado al carbón"
+            },
+            "salsa": {
+                "nombre": "Chiltomate",
+                "picor": "Alto"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Cebolla morada",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": [
+                        "Cebolla morada",
+                        "Naranja agria",
+                        "Sal"
+                    ]
+                },
+                {
+                    "nombre": "Chile habanero",
+                    "cantidad": "al gusto",
+                    "ingredientes": [
+                        "Habanero",
+                        "Sal",
+                        "Limón"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0002",
+        "tipo": "taco",
+        "nombre": "Taco de Huevo con Chaya",
+        "precio": 18.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Huevo",
+                "preparacion": "Revuelto con chaya picada"
+            },
+            "salsa": {
+                "nombre": "Salsa verde",
+                "picor": "Medio"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Frijol colado",
+                    "cantidad": "3 cucharadas",
+                    "ingredientes": [
+                        "Frijol negro",
+                        "Epazote",
+                        "Sal"
+                    ]
+                },
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": [
+                        "Cebolla blanca",
+                        "Cilantro",
+                        "Sal"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0003",
+        "tipo": "taco",
+        "nombre": "Taco de Cochinita Pibil",
+        "precio": 22.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Puerco",
+                "preparacion": "Marinado en achiote y naranja agria, horneado en hoja de plátano"
+            },
+            "salsa": {
+                "nombre": "Habanero",
+                "picor": "Muy alto"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Cebolla morada encurtida",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": [
+                        "Cebolla morada",
+                        "Naranja agria",
+                        "Limón",
+                        "Sal"
+                    ]
+                },
+                {
+                    "nombre": "Habanero picado",
+                    "cantidad": "al gusto",
+                    "ingredientes": [
+                        "Chile habanero",
+                        "Sal",
+                        "Limón"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0004",
+        "tipo": "taco",
+        "nombre": "Taco de Castacán",
+        "precio": 28.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Puerco",
+                "preparacion": "Frito con cuero, textura suave y crujiente"
+            },
+            "salsa": {
+                "nombre": "Tomate rojo",
+                "picor": "Medio"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Guacamole",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": [
+                        "Aguacate",
+                        "Jugo de limón",
+                        "Sal",
+                        "Cebolla",
+                        "Cilantro"
+                    ]
+                },
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": [
+                        "Cebolla blanca",
+                        "Cilantro",
+                        "Naranja",
+                        "Sal"
+                    ]
+                }
+            ]
+        }
+    }
+]
