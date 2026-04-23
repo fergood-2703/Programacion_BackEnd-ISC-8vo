@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #000;
+}
+
+/* bandera */
+body::before {
+    content: "";
+    position: fixed;
+
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    background: url("/images/bandera_onePiece.jpeg") no-repeat center;
+    background-size: 700px;
+
+    opacity: 0.40; 
+    z-index: 0;
+}
+
+/* capa oscura */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+/* contenido arriba */
+h1, .card, .btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* título */
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    margin-top: 30px;
+    color: #ffcc00;
+    text-shadow: 3px 3px 0 #000;
+}
+
+/* card */
+.card {
+    margin: 40px auto;
+    width: 320px;
+    padding: 25px;
+
+    background: linear-gradient(145deg, #5c3b1e, #8b5a2b);
+    border-radius: 20px;
+    border: 3px solid #c89b3c;
+
+    box-shadow:
+        0 0 15px rgba(255, 204, 0, 0.3),
+        inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* texto */
+.card h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+}
+
+.card p {
+    color: #f1e5c9;
+}
+
+/* botón */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    background: #d9a441;
+    color: #2b1a08;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 10px;
+    border: 2px solid #8b5a2b;
+
+    box-shadow: 0 4px 0 #5c3b1e;
+}
