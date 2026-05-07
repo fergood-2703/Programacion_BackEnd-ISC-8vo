@@ -80,10 +80,10 @@ app.listen(puerto, () => {
 app.post('/usuarios', async (req, res) => {
 
   try {
-    // ---------- CON ORM ----------
+    // ---------- CON ----------
     // const usuario = await Usuario.create(req.body);
 
-    // ---------- SIN ORM ----------
+    // ---------- SIN ----------
 
     // Se guardan los datos enviados desde el body
     const nuevoUsuario = req.body;
@@ -115,10 +115,10 @@ app.get('/usuarios', async (req, res) => {
 
   try {
 
-    // ---------- CON ORM ----------
+    // ---------- CON ----------
     // const usuarios = await Usuario.find();
 
-    // ---------- SIN ORM ----------
+    // ---------- SIN ----------
 
     // find() obtiene todos los documentos
     // toArray() convierte el resultado a un arreglo
@@ -147,10 +147,10 @@ app.get('/usuario/:id', async (req, res) => {
     // Se extrae el ID de la URL
     const { id } = req.params;
 
-    // ---------- CON ORM ----------
+    // ---------- CON ----------
     // const usuario = await Usuario.findById(id);
 
-    // ---------- SIN ORM ----------
+    // ---------- SIN ----------
 
     // findOne busca un solo documento
     // ObjectId convierte el id a formato MongoDB
@@ -187,10 +187,10 @@ app.put('/usuario/:id', async (req, res) => {
   try {
     const { id } = req.params;
 
-    // ---------- CON ORM ----------
+    // ---------- CON ----------
     // const usuario = await Usuario.findByIdAndUpdate(id, req.body);
 
-    // ---------- SIN ORM ----------
+    // ---------- SIN ----------
     // updateOne actualiza un documento
     const resultado = await usuariosCollection.updateOne(
 
@@ -234,10 +234,10 @@ app.delete('/usuario/:id', async (req, res) => {
   try {
     const { id } = req.params;
 
-    // ---------- CON ORM ----------
+    // ---------- CON ----------
     // const usuario = await Usuario.findByIdAndDelete(id);
 
-    // ---------- SIN ORM ----------
+    // ---------- SIN ----------
     // deleteOne elimina un documento
     const resultado = await usuariosCollection.deleteOne({
       _id: new ObjectId(id)
