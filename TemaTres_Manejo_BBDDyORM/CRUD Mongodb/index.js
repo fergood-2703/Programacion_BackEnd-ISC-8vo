@@ -1,10 +1,10 @@
 import express from 'express';
 
-// ---------- CON ORM ----------
+// ---------- CON ----------
 // import mongoose from 'mongoose';
 // import Usuario from './models/usuario.model.js';
 
-// ---------- SIN ORM ----------
+// ---------- SIN ----------
 // Se importa MongoClient para conectarse directamente a MongoDB
 // ObjectId para trabajar con los id de MongoDB
 import { MongoClient, ObjectId } from 'mongodb';
@@ -27,12 +27,12 @@ app.use(express.static('public'));
 // URL guardada en el archivo .env
 const uri = process.env.uri;
 
-// ---------- CON ORM ----------
+// ---------- CON ----------
 // mongoose.connect(uri)
 //   .then(() => console.log("Conexión exitosa a la base de datos"))
 //   .catch((error) => console.log("Error al conectar a la base de datos ", error));
 
-// ---------- SIN ORM ----------
+// ---------- SIN ----------
 
 // Se crea un cliente de MongoDB usando el driver oficial
 const client = new MongoClient(uri);
